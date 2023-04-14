@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(to right, #ccfd34, #000cf0);
+}
+#img{
+    width:300px;
+    height:179px;
+}
+#img img{
+    display:none;
+}
+#contents{
+    width:300px;
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    border-radius:0px 0px 20px 20px;
+    box-shadow:5px 5px 15px #0000c0;
+    background-color:rgba(0, 0, 0, 0.368);
+}
+#contents input{
+    background:transparent;
+    width:90px;
+    height:80px;
+    border:none;
+    outline:0;
+    font-size:70px;
+    text-align:center;
+    color:#fff;
+    border-bottom:2px solid #fff;
+}
+#botoes{
+    width:150px;
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+}
+#botoes button{
+    width:50px;
+    height:100%;
+    font-size:30px;
+    color:#fff;
+    border:none;
+    outline:0;
+    cursor:pointer;
+}
+button:first-child{
+    background-color:#eeb63e;
+}
+button:last-child{
+    background-color:#4cfd34;
+}
