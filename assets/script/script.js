@@ -79,14 +79,16 @@ function subtrair(){
 }
 
 function tela(){
-    let altura = window.innerHeight;
-    if(altura==667){
-        let conteudo = document.getElementById("container");
-        conteudo.style.marginTop="150px";
+    let app = document.querySelector("#app");
+    let atributosApp = app.getBoundingClientRect();
+    let largura = atributosApp.width;
+    if(largura==500){
+        let conteudos = document.querySelector("#container");
+        conteudos.style.marginTop="50px";
     }
-    else if(altura>=700){
-        let conteudo = document.getElementById("container");
-        conteudo.style.marginTop="-50px";
+    else if(largura==600){
+        let conteudos = document.querySelector("#container");
+        conteudos.style.marginTop="190px";
     }
 }
 
