@@ -4,11 +4,12 @@
     padding:0;
 }
 body{
+    min-width:500px;
     height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
-    background:linear-gradient(to right, #ccfd34, #000cf0);
+    background:linear-gradient(to right, #3fe81d, #0fc4e9);
 }
 #img{
     width:300px;
@@ -60,4 +61,14 @@ button:first-child{
 }
 button:last-child{
     background-color:#4cfd34;
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-image:url("../img/smallbg.png");
+        background-size:cover;
+    }
+   #container{
+    margin-top:-50px;
+   }
 }
